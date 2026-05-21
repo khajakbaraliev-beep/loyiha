@@ -1,0 +1,211 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(Aliev.png);
+    font-family: sans-serif;
+    background-attachment: fixed;
+    color: rgb(255, 0, 0);
+}
+
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+}
+
+
+.p-ichidagi-sozlar{
+    color: white;
+}
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 50px;
+}
+
+.hero-h1{
+    font-size: 40px;
+    animation: harakat 3s infinite linear;
+}
+
+.hero-h2{
+    font-size: 24px;
+    color: #00aaff;
+    margin-bottom: 15px;
+    animation: harakat 3s infinite linear;
+}
+
+.hero-p{
+    max-width: 500px;
+    line-height: 1.5;
+    animation: harakat 3s infinite linear;
+}
+
+
+@keyframes harakat {
+    0%{color:white;}
+    50%{color:rgb(251, 151, 2);}
+    100%{color:#fffdfd;}
+}
+
+
+.btn-klopka{
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-knopka{
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-klopka{
+    background:#00aaff;
+    color:white;
+}
+
+.btn-klopka:hover{
+    background:white;
+    color:#00aaff;
+}
+
+.btn-knopka{
+    background:white;
+    color:#00aaff;
+}
+
+.btn-knopka:hover{
+    background:#00aaff;
+    color:white;
+}
+
+
+.Portfollio{
+    width: 250px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+
+
+
+.card{
+    width: 250px;
+    height: auto;
+    background: rgb(50,7,7);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+} 
+
+
+.hero-3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+ .card1:hover .imgs{
+    transform: scale(1.1);
+}
+
+.card1:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+} 
+
+.fot{
+    text-align: center;
+    padding: 20px;
+}
+
+*/
+ .slider {
+  width: 600px;
+  overflow: hidden;
+  background: black;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(200px * 8); /* slide soniga qarab */
+  animation: scroll 10s linear infinite;
+}
+
+.slide {
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  width: 800px;
+  height: 200px;
+  margin: 10px;
+  background: gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 54px;
+}
+
+/* animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.imgs{
+    position: absolute;
+    width: 300px;
+    object-fit: cover;
+    display: block;
+}
+.coverflow{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+display: flex;
+gap: 20px;
+perspective: 1000px;
+ }
+.card2{
+width: 150px;
+height: 200px;
+background: blueviolet;
+ border-radius: 10px;
+transition: 0.4s;
+}
+.card2:hover{
+    transform: scale(1.2);
+    z-index:10;
+}
+.coverflow:hover .card2{
+    transform: rotateY(40deg);
+}
+.coverflow .card2:hover{
+    transform: scale(1.2) rotateY(0);
+}
