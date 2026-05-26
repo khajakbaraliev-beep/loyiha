@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hacker Intro</title>
+
+<style>
+body{
+  margin:0;
+  background:#000;
+  color:#00ff00;
+  font-family:monospace;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.terminal{
+  text-align:center;
+}
+
+.bar{
+  width:300px;
+  height:20px;
+  border:1px solid #00ff00;
+  margin-top:10px;
+}
+
+.fill{
+  height:100%;
+  width:0;
+  background:#00ff00;
+  animation: load 5s linear forwards;
+}
+
+@keyframes load{
+  to{width:100%}
+}
+
+.enter{
+  margin-top:20px;
+  opacity:0;
+  pointer-events:none;
+  text-decoration:none;
+  color:#00ff00;
+  border:1px solid #00ff00;
+  padding:10px 20px;
+  display:inline-block;
+  box-shadow:0 0 10px #00ff00;
+}
+
+.enter{
+  animation: showBtn 1s 5s forwards;
+}
+
+@keyframes showBtn{
+  to{
+    opacity:1;
+    pointer-events:auto;
+  }
+}
+
+.enter:hover{
+  background:#00ff00;
+  color:#000;
+}
+</style>
+</head>
+
+<body>
+
+<div class="terminal">
+  <div>Hacking system...</div>
+
+  <div class="bar">
+    <div class="fill"></div>
+  </div>
+
+  <a href="index.html" class="enter">ENTER SYSTEM</a>
+</div>
+
+</body>
+</html>
